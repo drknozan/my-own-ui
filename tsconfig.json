@@ -6,6 +6,6 @@
     "strict": true,
     "skipLibCheck": true,
     "jsx": "react",
-    "module": "ESNext"
+    "moduleResolution": "NodeNext"
   }
 }
