@@ -43,7 +43,6 @@ describe('Button', () => {
       background-color: transparent;
       color: #007bff;
       border: 1px solid #007bff;
-      padding: 8px 16px;
     `);
   });
 

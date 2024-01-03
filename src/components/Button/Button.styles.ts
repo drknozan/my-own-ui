@@ -14,7 +14,6 @@ const variants = {
     background-color: transparent;
     color: #007bff;
     border: 1px solid #007bff;
-    padding: 9px 19px;
   `,
   success: css`
     background-color: #00a854;
@@ -51,8 +50,8 @@ export const Button = styled.button<ButtonProps>`
   font-size: 12px;
   border-radius: 5px;
   border: none;
-  ${({ variant }) => variant && variants[variant || 'primary']}
-  ${({ size }) => size && sizes[size || 'small']}
+  ${({ variant }) => (variant ? variants[variant] : variants['primary'])}
+  ${({ size }) => (size ? sizes[size] : sizes['small'])}
   transition: opacity 0.3s ease;
 
   &:hover {
