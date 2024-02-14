@@ -19,28 +19,26 @@ const Progress = ({ onChange, options }: SelectProps) => {
     >
       <Styled.Value>{options[selected]}</Styled.Value>
       <Styled.DownIcon />
-      {
-        <Styled.Options
-          style={{
-            visibility: open ? 'visible' : 'hidden',
-            opacity: open ? 1 : 0,
-          }}
-        >
-          {options.map((option, index) => (
-            <Styled.Option
-              key={option}
-              onClick={() => {
-                if (option !== options[selected]) {
-                  onChange(option);
-                  setSelected(index);
-                }
-              }}
-            >
-              {option}
-            </Styled.Option>
-          ))}
-        </Styled.Options>
-      }
+      <Styled.Options
+        style={{
+          visibility: open ? 'visible' : 'hidden',
+          opacity: open ? 1 : 0,
+        }}
+      >
+        {options.map((option, index) => (
+          <Styled.Option
+            key={option}
+            onClick={() => {
+              if (option !== options[selected]) {
+                onChange(option);
+                setSelected(index);
+              }
+            }}
+          >
+            {option}
+          </Styled.Option>
+        ))}
+      </Styled.Options>
     </Styled.Container>
   );
 };
