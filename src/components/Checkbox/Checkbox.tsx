@@ -8,12 +8,12 @@ interface CheckboxProps {
   disabled?: boolean;
 }
 
-const Checkbox: React.FC<CheckboxProps> = ({
+const Checkbox = ({
   label,
   checked,
   onChange,
   disabled = false,
-}) => {
+}: CheckboxProps) => {
   const [isChecked, setIsChecked] = useState(checked || false);
 
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
