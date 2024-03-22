@@ -12,7 +12,7 @@ export const AccordionTitle = styled.div`
   justify-content: space-between;
   position: relative;
   min-height: 20px;
-  background-color: #f8f8f8;
+  background-color: #white;
 `;
 
 export const AccordionContent = styled.div<{ open: boolean }>`
