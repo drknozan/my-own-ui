@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Switch from './Switch';
 
 const meta: Meta<typeof Switch> = {
-  title: 'Example/Switch',
+  title: 'Components/Switch',
   component: Switch,
   tags: ['autodocs'],
 };

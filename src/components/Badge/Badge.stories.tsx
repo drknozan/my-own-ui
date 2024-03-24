@@ -3,7 +3,7 @@ import Badge from './Badge';
 import React from 'react';
 
 const meta: Meta<typeof Badge> = {
-  title: 'Example/Badge',
+  title: 'Components/Badge',
   component: Badge,
   tags: ['autodocs'],
 };

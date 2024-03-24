@@ -4,7 +4,7 @@ import Accordion from './Accordion';
 import React from 'react';
 
 const meta: Meta<typeof Accordion> = {
-  title: 'Example/Accordion',
+  title: 'Components/Accordion',
   component: Accordion,
   tags: ['autodocs'],
 };
