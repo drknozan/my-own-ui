@@ -2,24 +2,19 @@ import styled, { css } from 'styled-components';
 
 const variants = {
   primary: css`
-    border: 1px solid #007bff;
-    color: #007bff;
+    background-color: #007bff;
   `,
   secondary: css`
-    border: 1px solid #6c757d;
-    color: #6c757d;
+    background-color: #6c757d;
   `,
   success: css`
-    border: 1px solid #00a854;
-    color: #00a854;
+    background-color: #00a854;
   `,
   warning: css`
-    border: 1px solid #ffd700;
-    color: #ffd700;
+    background-color: #ffd700;
   `,
   error: css`
-    border: 1px solid #ff3860;
-    color: #ff3860;
+    background-color: #ff3860;
   `,
 };
 
@@ -30,6 +25,7 @@ export const Container = styled.div<{
   display: flex;
   justify-content: space-between;
   padding: 14px;
+  color: #fff;
   border-radius: 4px;
   background-color: #fff;
   ${(props) =>
@@ -53,12 +49,14 @@ export const Description = styled.div`
 export const CloseButton = styled.button<{
   $variant?: 'primary' | 'secondary' | 'success' | 'warning' | 'error';
 }>`
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
   background-color: #fff;
   font-size: 16px;
   cursor: pointer;
+  border: 1px solid #fff;
+  color: #fff;
   ${(props) =>
     props.$variant ? variants[props.$variant] : variants['primary']};
 `;
