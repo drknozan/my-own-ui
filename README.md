@@ -8,6 +8,3 @@
 - Jest
 - React Testing Library
 
-## 🚀 View
-
-💻 **You can view the storybook file on: [my-own-ui.vercel.app](https://my-own-ui.vercel.app/)**
